@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <script>
+         let nome = prompt('digite seu nome');
+        /*document.body.textContent= (`o seu nome é ${nome} `) ;
+        document.body.textContent= (`o seu nome tem ${nome.length} letras`);
+        document.body.textContent= (`a segunda letra do seu nome é ${nome.charAt(1)}`);
+        document.body.textContent= (`qual primeiro indice do seu nome ${nome.search(0)}`);
+        document.body.textContent= (`qual ultimo indice do seu nome é ${nome.search(nome.length)}`);
+        document.body.textContent= (`as 3 ultimas letra do seu nomeo seu nome sao ${nome.slice(-3)}`);
+        document.body.textContent= (`as palavras do seu nome ${nome}`);
+        document.body.textContent= (`seu nome minusculo ${nome.toLowerCase()}`);
+        document.body.textContent= (`seu nome maiusculo ${nome.toUpperCase()}`);*/
+        document.body.innerHTML+= `o seu nome é ${nome}<br/>` ;
+        document.body.innerHTML+= `o seu nome tem ${nome.length} letras<br/>`;
+        document.body.innerHTML+=  `a segunda letra do seu nome é ${nome.charAt(1)}<br/>`;
+        document.body.innerHTML+= `qual primeiro indice letra a do seu nome ${nome.indexOf('e')}<br/>`;
+        document.body.innerHTML+= `qual ultimo indice letra a do seu nome é ${nome.search(nome.lastIndexOf('e'))}<br/>`;
+        document.body.innerHTML+= `as 3 ultimas letra  do seu nomeo seu nome sao ${nome.slice(-3)}<br/>`;
+        document.body.innerHTML+= `as palavras do seu nome ${nome.split('')}<br/>`;
+        document.body.innerHTML+= `seu nome minusculo ${nome.toLowerCase()}<br/>`;
+        document.body.innerHTML+=`seu nome maiusculo ${nome.toUpperCase()}<br/>`;
+        //alexandre gonçalves evangelista
+    </script>
+</body>
+</html>
